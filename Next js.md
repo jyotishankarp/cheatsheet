@@ -42,5 +42,26 @@ const InnerComp = () => {
 * lets say we have a default button i.e **global** component and we want to override it,then we can simply create it using **CSS modules**.
 * we create the css module in `<name>.module.css` format and import it like `import <name> from '<name>.module.css;`
 * **Use's**: fo button CSS simply use by `<importname>.button` in the code.
+* Uses:
+```css
+.firstcustom {
+    color: aquamarine;
+    background-color: black;
+}
+```
+```jsx
+"use client"
+import React from 'react'
+import outside from '../../styles/outside.module.css'
+
+const PageButton = () => {
+    return (
+        // <button onClick={() => alert('Hola')} style={[outside.button,{ borderRadius: "15px", backgroundColor: "#2654fd" }]}>Clic to show price</button>
+        <button onClick={() => alert('Hola')} className={outside.firstcustom}>Clic to show price</button>
+    )
+}
+
+export default PageButton
+```
 
 
