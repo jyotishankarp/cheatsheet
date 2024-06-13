@@ -3,7 +3,7 @@ Next JS @13.3.4 Step by step guide
 ***
 ## Day-00
 #23. Test Sample Notes Data
-----------------------------
+--------------------------------------------------------
 ### Use Cases:
 * **Lifecycle Management**: React manages the mounting, updating, and unmounting of the component. This allows for the use of hooks and lifecycle methods.
 * **State and Props**: The component can manage its own state and receive props, making it more flexible and reusable.
@@ -29,14 +29,14 @@ const InnerComp = () => {
 ***
 ## Day: 03
 #21. Style with Next.JS(Inline styling,global css)
---------------------------------
+------------------------------------------------------------
 ### Use Cases:
 *   **Inline Styling**: in Next.JS the inline styling are as same as Reach like `style={{}}`.
 *   **Global CSS**: The global css are used to define styling globally in an project for ex: button color.
 *   **Priority**: If we use inline css for the same class written in global css file the priority will be given to the inline css.
 
 #22. CSS Modules
---------------------------------
+------------------------------------------------------------
 ### Use Cases:
 * **CSS Modules** are used for duplicate class declaration purpose in Next.JS
 * lets say we have a default button i.e **global** component and we want to override it,then we can simply create it using **CSS modules**.
